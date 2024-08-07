@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+	<div class="container">
+		<h1 class="title">Live PyCode</h1>
+		<form  method="POST">
+			<textarea name="code" class="code" cols="40" class="code" placeholder="Write your code " >{{code}}</textarea>
+			<input name="run" type="submit" value="run" class="run">
+		</form>
+		<textarea class="output" cols="40" disabled="disabled" lang="javascript">{{output}}</textarea>
+	</div>
+{% endblock %}
